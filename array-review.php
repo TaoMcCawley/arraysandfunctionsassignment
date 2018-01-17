@@ -1,3 +1,4 @@
+//Part 1 - James McPherson
 <?php
 
 $animals = array("panda", "alpaca", "boa");
@@ -16,6 +17,21 @@ if(!in_array("boa", $animals)){
     array_push($animals, "boa");
 }
 sortAndPrint($animals);
+
+//Part 2- James McPherson
+
+$flavors = array("grasshopper"=>"The Grasshopper",
+    "maple"=>"Whiskey Maple Bacon",
+    "carrot"=>"Carrot Walnut",
+    "caramel"=>"Salted Caramel Cupcake",
+    "velvet"=>"Red Velvet",
+    "lemon"=>"",
+    "tiramisu"=>"Tiramisu");
+
+foreach ($flavors as $value){
+    echo "<input type=\"checkbox\" name=\"flavors[]\" value=\"grasshopper\">".$value."<br>";
+
+}
 
 
 
